@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     actor User
     participant WS as FastAPI WebSocket
@@ -33,3 +34,4 @@ sequenceDiagram
     RE-->>Graph: 途中キャンセル処理 + slots リセット
     Graph-->>WS: 「予約手続きを中止しました」
     WS-->>User: ボット応答
+```
