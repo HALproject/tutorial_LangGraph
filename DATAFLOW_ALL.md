@@ -1,3 +1,5 @@
+```mermaid
+
 flowchart TD
   Start([ユーザー発話]) --> Classify[classify_intent<br/>意図推定]
   Classify -->|intent 判定| Route{route_after_intent}
@@ -18,3 +20,4 @@ flowchart TD
   class Extract slot
   class Respond resp
   class Route decision
+```
