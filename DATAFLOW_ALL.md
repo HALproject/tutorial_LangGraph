@@ -9,13 +9,11 @@ flowchart TD
     Route -->|weather| Respond
     Route -->|other| Respond
     Respond --> End([ボット応答 / END])
-
     %% スタイル
     classDef intent fill:#e1f5fe,stroke:#01579b
     classDef slot fill:#f3e5f5,stroke:#4a148c
     classDef resp fill:#e8f5e9,stroke:#1b5e20
     classDef decision fill:#fff3e0,stroke:#e65100
-
     class Classify intent
     class Extract slot
     class Respond resp
