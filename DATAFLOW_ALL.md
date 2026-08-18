@@ -1,17 +1,13 @@
 flowchart TD
     Start([ユーザー発話]) --> Classify[classify_intent<br/>意図推定]
-
     Classify -->|intent 判定| Route{route_after_intent}
-
     %% 予約フロー
     Route -->|book_restaurant| Extract[extract_slots<br/>スロット抽出<br/>with_structured_output]
     Extract --> Respond[respond<br/>応答生成]
-
     %% その他の意図は直接 respond
     Route -->|cancel_booking| Respond
     Route -->|weather| Respond
     Route -->|other| Respond
-
     Respond --> End([ボット応答 / END])
 
     %% スタイル
