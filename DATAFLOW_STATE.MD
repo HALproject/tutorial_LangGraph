@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     subgraph State["ChatState（共有状態）"]
         M[messages<br/>会話履歴]
@@ -33,3 +34,4 @@ flowchart LR
     Respond -->|リセット時| S
 
     style State fill:#f5f5f5,stroke:#333
+```
