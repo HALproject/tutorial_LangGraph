@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     StartExtract[extract_slots 開始] --> CheckIntent2{intent == book_restaurant?}
     CheckIntent2 -->|No| Skip[何もせず return]
@@ -10,3 +11,5 @@ flowchart TD
     Merge --> Missing[missing_slots 計算]
     Missing --> UpdateState[State 更新<br/>slots / current_slot / completed]
     UpdateState --> ToRespond[respond へ]
+
+```
